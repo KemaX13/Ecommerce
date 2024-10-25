@@ -1,0 +1,37 @@
+footer{
+    padding: 50px 150px;
+    background-color: rgba(3, 124, 135, 1);
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    div{
+        h4{
+            color: rgba(211, 253, 96, 1);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        ul{
+            li{
+                margin-bottom: 0.5rem;
+                display: flex;
+                img{
+                    width: 25px;
+                    margin-right: 10px;
+                }
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1020px) {
+    footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
