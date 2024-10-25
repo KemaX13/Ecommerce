@@ -1,0 +1,10 @@
+.slick-slide{
+    background-color: black;
+
+}
+.slick-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
