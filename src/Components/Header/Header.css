@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  margin: auto 5%;
+
+  height: max-content;
+  width: 100%;
+
+  background-color: #D3FD60;
+
+  gap: 5px;
+
+  .leftColumn, .rightColumn{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    margin: 0;
+  }
+}
