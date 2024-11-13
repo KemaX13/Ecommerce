@@ -1,17 +1,15 @@
 import './Links.css';
 
-function Links({ props }) {
-  const {img, altImg, url, text, param} = props;
-
+function Links({ imgPath, altImg, url, text, param }) {
   const renderContent = () => {
     const contentMap = {
-      img: <img className='img' src={ img } alt={ altImg } />,
+      img: <img className='img' src={ imgPath } alt={ altImg } />,
       text: <h2 className='text'>{ text }</h2>,
     };
 
     return contentMap[param] || (
       <>
-        <img className='img' src={ img } alt={ altImg } />
+        <div className='img'><img src={ imgPath } alt={ altImg } /></div>
         <h2 className='text'>{ text }</h2>
       </>
     );
