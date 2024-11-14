@@ -2,6 +2,10 @@ import TwoColumns from './Components/TwoColumns/TwoColumns'
 import Links from './Components/Links/Links'
 
 function App() {
+  const ddMenuIcon = <Links imgPath='./img/ddMenu.png'
+    altImg='DdMenuIcon'
+    param='img'/>
+
   const logoIcon = <Links url='/'
     text='Logo'
     param='text'/>
@@ -14,10 +18,11 @@ function App() {
     altImg='CartIcon'
     param='img'/>
 
+  const lElemH = [ddMenuIcon, logoIcon]
   const rElemH = [userIcon, cartIcon]
 
   return (
-    <header className='header twoColumns'><TwoColumns leftElmts={ logoIcon } rightElmts={ rElemH } /></header>
+    <header className='header twoColumns'><TwoColumns leftElmts={ lElemH } rightElmts={ rElemH } /></header>
   )
 }
 
