@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 170px;
+  height: 250px;
+
+  border: 2.5px solid rgb(0, 0, 0, 0.5);
+  margin: 5%;
+
+  .img {
+    width: 85%;
+    height: 85%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .product-card {
+    .product-cardName, .product-cardPrice {
+      font-size: 1rem;
+      color: #487549;
+      margin: 0;
+    }
+
+    .product-cardCategory {
+      font-size: 0.8rem;
+      color: rgb(0, 0, 0, 0.5);
+      margin: 0;
+    }
+  }
+}
